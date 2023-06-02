@@ -1,0 +1,82 @@
+main {
+    gap: 300px;
+}
+
+.container-principal {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+}
+
+.contato h3 {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor-texto);
+}
+
+.redes-sociais__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes-sociais__btn { 
+    width: 380px; 
+    padding: 16px;
+    box-sizing: border-box;
+    border: solid var(--cor-primaria) 1.5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    
+    font-family: var(--fonte-segundaria);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--cor-primaria);
+    transition: 0.5s;
+}
+
+.redes-sociais__btn:hover {
+    color: var(--cor-texto);
+    background-color: var(--cor-botao-hover);
+    border: solid var(--cor-botao-hover) 1.5px;
+}
+
+.redes-sociais__btn:active {
+    border: solid var(--cor-texto) 1.5px;
+}
+
+.redes-sociais__btn i {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1130px) {
+    main {
+        gap: 60px;
+    }
+
+    .container-principal {
+        padding: 0;
+    }
+
+    #imagem-perfil {
+        border-radius: 90px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container-principal {
+        width: 450px;
+    }
+}

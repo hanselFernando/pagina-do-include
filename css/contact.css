@@ -1,0 +1,95 @@
+main {
+    gap: 150px;
+}
+
+.form {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+    margin: 30px 0 8px 0;
+}
+
+#nome,
+#email {
+    height: 45px;
+}
+
+#textarea {
+    height: 150px;
+    resize: none;
+}
+
+#nome,
+#email,
+#textarea {
+    border: solid var(--cor-primaria) 1px;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--cor-segundaria);
+}
+
+#nome,
+#email,
+#textarea,
+::placeholder {
+    font-family: var(--fonte-segundaria);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form textarea:focus,
+.form input:focus {
+    outline: solid var(--cor-botao-hover) 1.5px;
+}
+
+.form button {
+    height: 64px;
+    border-radius: 8px;
+    border: solid var(--cor-primaria) 1.5px;
+    margin-top: 32px;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    transition: 0.5s;
+}
+
+.form button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.form button:active {
+    border: solid var(--cor-texto) 1.5px;
+}
+
+@media screen and (max-width: 1130px) {
+    main {
+        gap: 60px;
+    }
+
+    .container-principal {
+        padding: 0;
+    }
+
+    .form {
+        width: 550px;
+    }
+
+    #imagem-perfil {
+        border-radius: 90px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .form {
+        width: 420px;
+    }
+}

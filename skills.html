@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ab6f574ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon-homer.png">
+    <title>Minhas habilidades</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-desktop">
+            <ul class="menu__lista-desktop">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre mim</a></li>
+                <li><a class="underline" href="skills.html">Habilidades</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="menu-mobile invisivel">
+            <ul class="menu__lista-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre mim</a></li>
+                <li><a class="underline" href="skills.html">Habilidades</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <button class="botao__menu-mobile"><img src="assets/icons/menu.svg" alt="menu"></button>
+    </header>
+    <main>
+        <section class="container-principal">
+            <h1 class="titulo-principal" data-value="Minhas Habilidades"></h1>
+            <h3 class="subtitulo">Habilidades Técnicas:</h3>
+            <ul>
+                <li>Programação em JavaScript</li>
+                <li>Desenvolvimento web com HTML e CSS</li>
+                <li>Canvas</li>
+                <li>p5.js</li>
+                <li>Git e GitHub</li>
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #ff3336;"></i>
+                <i class="fa-brands fa-css3-alt fa-2xl" style="color: #019bdb;"></i>
+                <i class="fa-brands fa-js fa-2xl" style="color: #ead41c;"></i>
+                <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+            </div>
+        </section>
+        <img id="imagem-perfil" src="assets/img/homer.png" alt="imagem de imagem-perfil">
+    </main>
+    <footer>
+        <img class="logo-alura" src="assets/img/logo-alura-include.png" alt="logo da Alura">
+        <h4 class="rodape__titulo">Desenvolvido por <strong>Fernando Hansel</strong> no programa <strong>Alura Include.</strong></h4>
+    </footer>
+
+    <script src="js/efeitoDigitando.js"></script>
+    <script src="js/menuMobile.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+main {
+    gap: 250px;
+}
+
+.container-principal {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1130px) {
+    main {
+        gap: 60px;
+    }
+
+    .container-principal {
+        padding: 0;
+        width: 550px;
+    }
+
+    #imagem-perfil {
+        border-radius: 90px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container-principal {
+        width: 450px;
+    }
+}
